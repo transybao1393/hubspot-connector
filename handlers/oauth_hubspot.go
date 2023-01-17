@@ -9,20 +9,6 @@ import (
 	"golang.org/x/oauth2"
 )
 
-// Scopes: OAuth 2.0 scopes provide a way to limit the amount of access that is granted to an access token.
-//- FIXME: Move env with endpoint to file
-// var hubspotOauthConfig = &oauth2.Config{
-// 	RedirectURL:  "http://localhost:8000/auth/hubspot/callback",
-// 	ClientID:     "11ce62ba-d0f0-400a-a90c-b7d8f1bf5d6f",
-// 	ClientSecret: "e754f12e-a4da-474a-aabc-108bf6c3af9b",
-// 	Scopes:       []string{"crm.objects.companies.read", "crm.objects.contacts.read"},
-// 	Endpoint:     oauth2.Endpoint {
-// 		AuthURL: "https://app.hubspot.com/oauth/authorize",
-// 		TokenURL: "https://api.hubspot.com/oauth/v1/token",
-// 		AuthStyle: 1,
-// 	},
-// }
-
 var hubspotOauthConfig = &oauth2.Config{
 	RedirectURL:  "http://localhost:8000/auth/hubspot/callback",
 	ClientID:     "",
